@@ -1,0 +1,51 @@
+
+.hero {
+    text-align: left; /* Align text to the left */
+    justify-items: center;
+    padding: 2rem;
+    background: 0;
+    color: white; 
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    align-items: center; /* Align content vertically */
+    max-width: 900px;
+    margin: 0 auto;
+    gap: 20px; /* Space between text and image */
+}
+
+.hero-text {
+    text-align: left;
+}
+
+.hero-image {
+    padding-top: 0px;
+    margin-top: 65px;
+}
+
+.hero-image img {
+    width: 40vw;
+    height: 40vw;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #09930E;
+    
+}
+
+.home-page-footer{
+    background: rgba(243, 243, 243, 0.582); 
+    width: auto;
+    padding: 0.3rem 2rem;
+    border-radius: 30px;
+
+    display: flex; /* Makes items align in a row */
+    justify-content: center; /* Center the items */
+    align-items: center; /* Align them vertically */
+    gap: 15px; /* Adds spacing between icons */
+    
+}
+.home-page-footer > a {
+    display: inline-block; /* Ensures links stay inline */
+}

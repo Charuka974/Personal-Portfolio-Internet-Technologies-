@@ -5,285 +5,319 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
     <link rel="icon" href="/assets/images/page logo.png" />
-    <!-- <style>
-        table, th, td {
-            border: 2px solid black;
-            border-collapse: collapse;
-        }
-    </style> -->
-    <style>
-        
-        nav {
-            position: fixed;
-            top: 0;
-            right: 0;
-            width: auto;
-            background-color: #8f8f8f3e;
-            padding: 0px;
-            z-index: 1000;
-            border-radius: 50px;
-        }
-    </style>
+    <link rel="stylesheet" href="/css/navigation-styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/page-styles.css">
+    <link rel="stylesheet" href="/css/projects.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/assignments.css">
+    <link rel="stylesheet" href="/css/skills.css">
+    <link rel="stylesheet" href="/css/services.css">
+    <link rel="stylesheet" href="/css/gallery.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/contact.css">
 
 
+    
 </head>
 <body>
-    <header style="display: flex; justify-content: space-between; align-items: center; padding: 10px; position: absolute; top: 0; left: 0; width: 100%;">
-        
-        <nav> <!-- represents navigations-->
-            <table style="border-collapse: collapse;">
-                <thead>
-                    <tr>
-                        <th style="padding: 2px;"></th>
-                        <th><img 
-                            src="/assets/images/page logo.png" 
-                            alt="logo" 
-                            style="width: 40px; height: 40px; object-fit: cover; border-radius: 50px;">
-                        </th>
-                        <th style="width: 60%;"></th>
-                        <th><button style="border-radius: 30px;"><a href="#home"><b>Home</b></a></button></th>
-                        <th><button style="border-radius: 30px;"><a href="#projects"><b>Projects</b></a></button></th>
-                        <th><button style="border-radius: 30px;"><a href="#assignments"><b>Assignments</b></a></button></th>
-                        <th><button style="border-radius: 30px;"><a href="#services"><b>Services</b></a></button></th>
-                        <th><button style="border-radius: 30px;"><a href="#skills"><b>Skills</b></a></button></th>
-                        <th><button style="border-radius: 30px;"><a href="#gallery"><b>Gallery</b></a></button></th>
-                        <th><button style="border-radius: 30px;"><a href="#about"><b>About</b></a></button></th>
-                        <th><button style="border-radius: 30px;"><a href="#contact"><b>Contact</b></a></button></th>
-                        <th style="padding: 20px;"></th>
-                    </tr>
-                </thead>
-            </table>
+    <div class="box" id="box-top"></div>
+    <div class="box" id="box-bottom"></div>
+
+
+    <header>
+        <nav class="navbar">
+            <!-- <div class="logo"><img id="nav-logo" src="/assets/images/page logo.png" alt="logo"></div> -->
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#assignments">Assignments</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
-
-
     </header>
+
+    <section id="home">
+        <div class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Hello, I'm Charuka Hansaja</h1>
+                </div>
+                <div class="hero-image">
+                    <!-- <img src="/assets/images/WhatsApp_Image_2025-01-11_at_06.06.49_1f1ce721-removebg-preview.png" alt="Charuka Hansaja"> -->
+                </div>
+                <div class="hero-details">
+                    <p>Software Developer Student</p>
+                    <p>I'm a Sri Lanka-based full-stack developer focused on creating great and user-friendly experiences. I'm passionate about building great software that improves the lives of those around me.</p>
+                    <a href="#about" class="btn">About me</a>
+                    <a href="#" class="btn">Download Resume</a>
+                </div>
+            </div>
+        </div>
+
+        <footer class="home-page-footer">
+            <a href="https://github.com/Charuka974" target="_blank">
+                <img id="social-link-image" 
+                src="/assets/images/icons8-github-96.png" 
+                alt="github picture">
+            </a>
+           
+            <a href="https://www.linkedin.com/in/charuka-hansaja-756070346/" target="_blank">
+                <img id="social-link-image"
+                src="/assets/images/icons8-linkedin-logo-100.png" 
+                alt="linkedin picture">
+            </a>
+        </footer>
+
+    </section>
+    
+    
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project-container">
+
+            <div class="project-box">
+   
+               <div class="review-header">
+                <div class="personal-details">
+                   <img class="profile-image" src="/assets/images/page logo.png" alt="">
+                   <p class="name">Charuka Hansaja</p>
+                </div>
+                <span class="rating">⭐⭐⭐⭐⭐⭐</span>
+               </div>
         
-   <section id="home">
-    <table style="text-align: center; margin: auto;">
-        <tr style="height: 50px;"></tr>
-        <tr>
-            <th>
-                <div style="text-align: left;">
+                <div class="review-text">
                     <p>
-                        <span><font size="4">&emsp;&emsp;&emsp; Hello, I'm</font></span><br>
-                        <span><font size="6">&emsp;&emsp;&emsp;&emsp; Charuka Hansaja</font></span><br><br>
-                        <span><font size="3">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; I am a Software Engineering Student</font></span>                </p>    
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ratione corporis error. Non, minima. Reprehenderit asperiores voluptatum nisi in exercitationem.
+                    </p>
                 </div>
-            </th>
-            <th>
-                <div style="text-align: right;">
-                    <img 
-                        src="/assets/images/WhatsApp_Image_2025-01-11_at_06.06.49_1f1ce721-removebg-preview.png" 
-                        alt="profile picture" 
-                        style="width: 200px; height: 200px; object-fit: cover;border-radius: 50%;">
+        
+            </div>
+   
+            <div class="project-box">
+   
+               <div class="review-header">
+                <div class="personal-details">
+                   <img class="profile-image" src="/assets/images/page logo.png" alt="">
+                   <p class="name">Charuka Hansaja</p>
                 </div>
-            </th>
-        </tr>
-       </table>
-    
-       <div style="text-align: center;">
-        <a href="#about">
-            <button style="border-radius: 30px;">
-                <font size="4"><b>About me</b></font>
-            </button>
-        </a>
-        <br>
-        <br>
-        <button style="border-radius: 30px;">
-            <font size="3"><b>Download Resume</b></font>
-        </button>
+                <span class="rating">⭐⭐⭐⭐⭐⭐</span>
+               </div>
+        
+                <div class="review-text">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ratione corporis error. Non, minima. Reprehenderit asperiores voluptatum nisi in exercitationem.
+                    </p>
+                    <p>
+                       
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ratione corporis error. Non, minima. Reprehenderit asperiores voluptatum nisi in exercitationem.
+                   </p>
+                </div>
+        
+            </div>
+   
+            <div class="project-box">
+   
+               <div class="review-header">
+                <div class="personal-details">
+                   <img class="profile-image" src="/assets/images/page logo.png" alt="">
+                   <p class="name">Charuka Hansaja</p>
+                </div>
+                <span class="rating">⭐⭐⭐⭐⭐⭐</span>
+               </div>
+        
+                <div class="review-text">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ratione corporis error. Non, minima. Reprehenderit asperiores voluptatum nisi in exercitationem.
+                    </p>
+                    
+                </div>
+        
+            </div>
+   
+            <div class="project-box">
+   
+               <div class="review-header">
+                <div class="personal-details">
+                   <img class="profile-image" src="/assets/images/page logo.png" alt="">
+                   <p class="name">Charuka Hansaja</p>
+                </div>
+                <span class="rating">⭐⭐⭐⭐⭐⭐</span>
+               </div>
+        
+                <div class="review-text">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ratione corporis error. Non, minima. Reprehenderit asperiores voluptatum nisi in exercitationem.
+                    </p>
+                </div>
+        
+            </div>
+   
+            <div class="project-box">
+   
+               <div class="review-header">
+                <div class="personal-details">
+                   <img class="profile-image" src="/assets/images/page logo.png" alt="">
+                   <p class="name">Charuka Hansaja</p>
+                </div>
+                <span class="rating">⭐⭐⭐⭐⭐⭐</span>
+               </div>
+        
+                <div class="review-text">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ratione corporis error. Non, minima. Reprehenderit asperiores voluptatum nisi in exercitationem.
+                    </p>
+                </div>
+        
+            </div>
+   
+            <div class="project-box">
+   
+               <div class="review-header">
+                <div class="personal-details">
+                   <img class="profile-image" src="/assets/images/page logo.png" alt="">
+                   <p class="name">Charuka Hansaja</p>
+                </div>
+                <span class="rating">⭐⭐⭐⭐⭐⭐</span>
+               </div>
+        
+                <div class="review-text">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ratione corporis error. Non, minima. Reprehenderit asperiores voluptatum nisi in exercitationem.
+                    </p>
+                </div>
+        
+            </div>
+   
        </div>
-    
-       <section>
-        <table>
-            <tr>
-                <td>
-                    <a href="https://github.com/Charuka974" target="_blank">
-                        <img 
-                        src="/assets/images/icons8-github-96.png" 
-                        alt="social link1" 
-                        style="width: 40px; height: 40px; object-fit: cover;">
-                    </a>
-                    
-                </td>
-                <td>
-                    <a href="https://www.linkedin.com/in/charuka-hansaja-756070346/" target="_blank">
-                        <img 
-                        src="/assets/images/icons8-linkedin-logo-100.png" 
-                        alt="social link2" 
-                        style="width: 40px; height: 40px; object-fit: cover;">
-                    </a>
-                    
-                </td>
-            </tr>
-           </table>
-       </section>
-
-       <br>
-       <hr>
-       <br>
-       <br>
-   </section>
-
-   <section id="projects">
-    <header style="text-align: center;"><font size="5"><b>Projects</b></font></header>
-    <br>
-
-    <div style="text-align: center; margin: 0 auto; width: 100%;">
-        <table style="width: 100%; border-collapse: collapse;">
-
-            <tr style="height: 100px;">
-                <td style="text-align: center; vertical-align: middle;">
-                    <table style="width: 300px; border-collapse: collapse;">
-                        <tr style="height: 400px;">
-                            <td style="width: 33.33%; border: 2px solid black; text-align: center; vertical-align: middle;">
-
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-                <td style="text-align: center; vertical-align: middle;">
-                    <table style="width: 300px; border-collapse: collapse;">
-                        <tr style="height: 400px;">
-                            <td style="width: 33.33%; border: 2px solid black; text-align: center; vertical-align: middle;">
-
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-                <td style="text-align: center; vertical-align: middle;">
-                    <table style="width: 300px; border-collapse: collapse;">
-                        <tr style="height: 400px;">
-                            <td style="width: 33.33%; border: 2px solid black; text-align: center; vertical-align: middle;">
-
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-    
-            
-        </table>
-    </div>
-
-    
-
-    <br>
-    <hr>
-    <br>
-    <br>
-   </section>
-
-   <section id="assignments">
-    <header style="text-align: center;"><font size="5"><b>Assignments</b></font></header>
-    <br>
-
-    <table style="margin: 0 auto;">
-        <tr>
-            <td style="padding: 4%;">
-                <button style="width: 600px; height: 50px; border-radius: 50px;"><font size="3"><b>Module 1</b></font></button>
-            </td>
-        </tr>
-        <tr>
-            <td style="padding: 4%;">
-                <button style="width: 600px; height: 50px; border-radius: 50px;"><font size="3"><b>Module 2</b></font></button>
-            </td>
-        </tr>
-        <tr>
-            <td style="padding: 4%;">            
-                <button style="width: 600px; height: 50px; border-radius: 50px;"><font size="3"><b>Module 3</b></font></button>
-            </td>
-        </tr>
-        <tr>
-            <td style="padding: 4%;">
-                <button style="width: 600px; height: 50px; border-radius: 50px;"><font size="3"><b>Module 4</b></font></button>
-            </td>
-        </tr>
-        <tr>
-            <td style="padding: 4%;">            
-                <button style="width: 600px; height: 50px; border-radius: 50px;"><font size="3"><b>Module 5</b></font></button>
-            </td>
-        </tr>
-        <tr>
-            <td style="padding: 4%;">            
-                <button style="width: 600px; height: 50px; border-radius: 50px;"><font size="3"><b>Module 6</b></font></button>
-            </td>
-        </tr>
-    </table>
 
 
 
-    <br>
-    <hr>
-    <br>
-    <br>
-   </section>
+    </section>
 
+    <section id="assignments">
+        <h2>Assignments</h2>
+        <ul>
+            <li>Programming Fundamentals</li>
+            <li>Database Management Systems</li>
+            <li>Software Engineering</li>
+            <li>Object-Oriented Programming</li>
+            <li>Internet Technologies</li>
+            <li>Architectures and Design Patterns</li>
+        </ul>
+    </section>
 
-   <section id="services">
-    <header style="text-align: center;"><font size="5"><b>Services</b></font></header>
-    <br>
+    <section id="services">
+        <h2>Services</h2>
+        <div class="service-grid">
+            <div class="service">
+                <h3>UI & UX Design</h3>
+                <p>From custom design to powerful plugins, I create digital masterpieces, designing web apps, mobile UI, and UX for iOS and Android platforms.</p>
+            </div>
+            <div class="service">
+                <h3>Web Development</h3>
+                <p>I design and develop well-designed websites, committed to delivering a product that captures the essence of your business.</p>
+            </div>
+            <div class="service">
+                <h3>Application Development</h3>
+                <p>I create full-featured applications by building modern user interfaces that satisfy users' aesthetic needs.</p>
+            </div>
+        </div>
+        <a href="#contact" class="btn">Contact me</a>
+    </section>
 
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill" data-percent="90%">
+                <h3>MySQL</h3>
+            </div>
+            <div class="skill" data-percent="90%">
+                <h3>Java</h3>
+            </div>
+            <div class="skill" data-percent="80%">
+                <h3>JavaFX</h3>
+            </div>
+            <div class="skill" data-percent="70%">
+                <h3>HTML</h3>
+            </div>
+            <div class="skill" data-percent="60%">
+                <h3>CSS</h3>
+            </div>
+        </div>
+    </section>
 
-    <br>
-    <hr>
-    <br>
-    <br>
-   </section>
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="/assets/images/WhatsApp Image 2025-02-12 at 17.42.05_a8ec3347.jpg" alt="Gallery Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="/assets/images/Screenshot 2024-11-19 192539.png" alt="Gallery Image 2">
+            </div>
+            <div class="gallery-item">
+                <img src="/assets/images/Screenshot 2024-11-24 213545.png" alt="Gallery Image 3">
+            </div>
+        </div>
 
+    </section>
 
-   <section id="skills">
-    <header style="text-align: center;"><font size="5"><b>Skills</b></font></header>
-    <br>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a Software Engineer in Sri Lanka, currently studying at IJSE.</p>
+        <div class="personal-info">
+            <h3>Personal Information</h3>
+            <p>Name: U.G. Charuka Hansaja</p>
+            <p>Country: Sri Lanka</p>
+        </div>
+    </section>
 
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
 
-    <br>
-    <hr>
-    <br>
-    <br>
-   </section>
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
 
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required>
 
-   <section id="gallery">
-    <header style="text-align: center;"><font size="5"><b>Gallery</b></font></header>
-    <br>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
 
+            <button type="submit">Send</button>
+        </form>
+        <div class="contact-info">
+            <p>Email: c44073838@gmail.com</p>
+            <p>Phone: 0716968190</p>
+        </div>
+    </section>
 
-    <br>
-    <hr>
-    <br>
-    <br>
-   </section>
-
-
-   <section id="about">
-    <header style="text-align: center;"><font size="5"><b>About me</b></font></header>
-    <br>
-
-
-    <br>
-    <hr>
-    <br>
-    <br>
-   </section>
-
-
-   <section id="contact">
-    <header style="text-align: center;"><font size="5"><b>Contact me</b></font></header>
-    <br>
-
-
-    <br>
-    <hr>
-    <br>
-    <br>
-   </section>
-
-
-
-
-    
-    
+    <footer class="site-end-footer">
+        <div class="site-end-links">
+            <a href="https://github.com/Charuka974" target="_blank">
+                <img id="social-link-image" 
+                src="/assets/images/icons8-github-96.png" 
+                alt="github picture">
+            </a>
+           
+            <a href="https://www.linkedin.com/in/charuka-hansaja-756070346/" target="_blank">
+                <img id="social-link-image"
+                src="/assets/images/icons8-linkedin-logo-100.png" 
+                alt="linkedin picture">
+            </a>
+        </div>
+        <p>&copy; 2023 Charuka Hansaja. All rights reserved.</p>
+    </footer>
 
 
 

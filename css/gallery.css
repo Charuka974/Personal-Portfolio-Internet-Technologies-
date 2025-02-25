@@ -1,0 +1,29 @@
+#gallery {
+    padding: 2rem;
+    text-align: center;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    gap: 20px; /* Space between images */
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.gallery-item img {
+    width: 100%; /* Make images responsive */
+    height: auto;
+    border-radius: 10px; /* Rounded corners */
+    object-fit: cover; /* Ensure images fill the container */
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+
+

@@ -1,0 +1,28 @@
+#assignments {
+    color: white;
+}
+
+#assignments ul {
+    list-style: none; /* Remove default bullets */
+    padding: 0;
+}
+
+#assignments li {
+    font-size: 1.2rem;
+    padding: 15px 20px; 
+    margin-bottom: 10px; 
+    background: rgba(255, 255, 255, 0.1); 
+    transition: 0.3s ease-in-out, transform 0.2s ease-in-out;
+    border-radius: 30px;
+    text-align: center;
+   
+    
+}
+
+#assignments li:hover {
+    background: #000000;
+    color: white;
+    transform: scale(1.05); 
+    cursor: pointer;
+    box-shadow: 2px 5px 10px white;
+}

@@ -1,0 +1,57 @@
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.skill {
+    background: #f4f4f4;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 50%;
+    width: 8vw;
+    height: 8vw;
+    box-shadow: 2px 5px 10px rgb(171, 27, 27);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Individual Skill Styling */
+.skill {
+    position: relative; /* For positioning percentage */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.skill:hover {
+    background: #000000;
+    color: white;
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow: 2px 5px 10px white;
+}
+
+/* Percentage Display on Hover */
+.skill::after {
+    content: attr(data-percent); /* Pull the percentage from data attribute */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Hide Skill Name on Hover and Show Percentage */
+.skill:hover h3 {
+    opacity: 0; /* Hide skill name */
+}
+
+.skill:hover::after {
+    opacity: 1; /* Show percentage */
+}
