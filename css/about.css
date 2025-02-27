@@ -2,3 +2,12 @@
 #about {
     color: white;
 }
+.about-info{
+    margin: 40px;
+}
+h3{
+    text-align: center;
+}
+p{
+    text-align: center;
+}

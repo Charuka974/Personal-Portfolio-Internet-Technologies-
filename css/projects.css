@@ -1,15 +1,19 @@
 
 #projects{
     text-align: center;
-    justify-items: normal;
+    
 }
 .project-container{
+    justify-content: center;
+    align-items: center;
+    
+    width: 100vw;
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    gap: 40px;
+    grid-template-columns: repeat(3, 1fr); 
+    padding: 20px;
+    
 }
 .project-box{
-    /* border: 1px  solid black; */
     height: auto;
     background-color: rgba(0, 62, 5, 0.673); 
     border-radius: 20px;
@@ -55,4 +59,18 @@
     margin-left: 3vw;
     text-shadow: 2px 2px 2px gray;
     margin-right: 5px;
+}
+
+@media screen and (max-width: 860px) {
+    .project-container{
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .project-container{
+        grid-template-columns: repeat(1, 1fr); 
+    }
+
 }

@@ -141,34 +141,6 @@ h2 {
     }
 }
 
-@media (max-width: 768px) {
-    .hero-content {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero-image {
-        order: 2; /* Move the image below the heading */
-        margin: 20px auto;
-    }
-
-    .hero-text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .hero-text h1 {
-        order: 1; /* Keep the heading at the top */
-    }
-
-    .hero-details {
-        order: 3; /* Move the paragraph and buttons below the image */
-    }
-}
-
-
 
 @media (max-width: 600px) {
     #box-top {

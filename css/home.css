@@ -1,6 +1,6 @@
 
 .hero {
-    text-align: left; /* Align text to the left */
+    text-align: left; 
     justify-items: center;
     padding: 2rem;
     background: 0;
@@ -9,11 +9,11 @@
 
 .hero-content {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two equal columns */
-    align-items: center; /* Align content vertically */
+    grid-template-columns: 1fr 1fr; 
+    align-items: center;
     max-width: 900px;
     margin: 0 auto;
-    gap: 20px; /* Space between text and image */
+    gap: 20px; 
 }
 
 .hero-text {
@@ -26,11 +26,12 @@
 }
 
 .hero-image img {
-    width: 40vw;
-    height: 40vw;
+    width: 20vw;
+    height: 20vw;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid #09930E;
+    box-shadow: 4px 4px 10px #09930E;
     
 }
 
@@ -47,5 +48,53 @@
     
 }
 .home-page-footer > a {
-    display: inline-block; /* Ensures links stay inline */
+    display: inline-block;
+}
+
+@media screen and (max-width: 600px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+    }
+    .hero-image img {
+        width: 50vw;
+        height: 50vw;
+        
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .hero-image img {
+        width: 80vw;
+        height: 80vw;
+        
+    }
+
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image {
+        order: 2; /* Move the image below the heading */
+        margin: 20px auto;
+    }
+
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-text h1 {
+        order: 1; /* Keep the heading at the top */
+    }
+
+    .hero-details {
+        order: 3; /* Move the paragraph and buttons below the image */
+    }
 }
