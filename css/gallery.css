@@ -19,6 +19,7 @@
     border-radius: 10px;
     object-fit: cover;
     transition: transform 0.3s ease-in-out;
+    z-index: -1;
 }
 
 .gallery-item img:hover {

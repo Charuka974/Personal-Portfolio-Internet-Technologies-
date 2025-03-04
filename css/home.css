@@ -22,6 +22,7 @@
     left: -100vw;
     animation: welcome 2s forwards ease-in-out;
     opacity: 0;
+    z-index: -1;
 }
 .hero-text > h1{
     font-size: 2rem;
@@ -38,6 +39,7 @@
     left: 100vw;
     animation: home-details 2s forwards ease-in-out;
     opacity: 0;
+    z-index: -1;
 }
 
 @keyframes home-details {
