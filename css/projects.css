@@ -7,9 +7,10 @@
     justify-content: center;
     align-items: center;
     
-    width: 100vw;
+    width: 98vw;
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
+    gap: 10px;
     padding: 20px;
     
 }
@@ -31,7 +32,33 @@
     border-radius: 20px;
     padding: 5px;
     overflow-y: scroll; /* make the content scrollable if it 's too long for the given height */
+    
+}
+.review-text h4{
+    font-size: 1.4rem;
+    text-align: center;
+}
+.review-text p{
+    text-align: start;
+}
 
+.project-link{
+    cursor: pointer;
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 5px;
+    text-decoration: none;
+    box-shadow: 3px 3px 6px rgb(94, 0, 0);
+    transition: font-size 0.3s ease-in-out;
+
+}
+
+.project-link:hover{
+    background-color: black;
+    box-shadow: 3px 3px 6px rgb(0, 85, 0);
+    font-size: 1.1rem;
 }
 
 .profile-image{
@@ -42,23 +69,39 @@
     border-radius: 50%;
     box-shadow: 2px 2px 10px white;
 }
-.personal-details{
+.project-header{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     color: white;
+    padding-top: 5px;
 }
-
 .review-header{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    
+    justify-content: center;
 }
+
+
 .rating{
     margin-left: 3vw;
     text-shadow: 2px 2px 2px gray;
     margin-right: 5px;
+}
+
+.project-ing-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.project-image{
+    position: relative;
+    width: 90%;
+    height: 200px;
+    object-fit: contain;
+
 }
 
 @media screen and (max-width: 860px) {

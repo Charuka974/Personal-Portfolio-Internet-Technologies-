@@ -18,11 +18,54 @@
 
 .hero-text {
     text-align: left;
+    position: relative;
+    left: -100vw;
+    animation: welcome 2s forwards ease-in-out;
+    opacity: 0;
+}
+.hero-text > h1{
+    font-size: 2rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.hero-details > h2{
+    margin-top: 0;
+    padding-top: 0;
 }
 
+.hero-details{
+    position: relative;
+    left: 100vw;
+    animation: home-details 2s forwards ease-in-out;
+    opacity: 0;
+}
+
+@keyframes home-details {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-90vw);
+        opacity: 1;
+    }
+}
+
+@keyframes welcome {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(100vw);
+        opacity: 1;
+    }
+}
+
+
 .hero-image {
-    padding-top: 0px;
-    margin-top: 65px;
+    position: relative;
+    left: 20vw;
+    top: 20vh;
+    z-index: -1;
 }
 
 .hero-image img {
@@ -52,6 +95,10 @@
 }
 
 @media screen and (max-width: 600px) {
+    .hero-image {
+        left: 0vw;
+        top: 0vh;
+    }
     .hero-content {
         grid-template-columns: 1fr;
     }
@@ -60,19 +107,39 @@
         height: 50vw;
         
     }
+    .hero-text > h1{
+        font-size: 1.5rem;
+        width: 90vw;
+    }
+    
+
 
 }
 
 @media screen and (max-width: 400px) {
+    .hero-image {
+        left: 0vw;
+        top: 0vh;
+    }
+    .hero-text > h1{
+        font-size: 1.5rem;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
     .hero-image img {
-        width: 80vw;
-        height: 80vw;
+        width: 70vw;
+        height: 70vw;
         
     }
+    
 
 }
 
 @media (max-width: 768px) {
+    .hero-image {
+        left: 0vw;
+        top: 0vh;
+    }
     .hero-content {
         display: flex;
         flex-direction: column;
@@ -97,4 +164,17 @@
     .hero-details {
         order: 3; /* Move the paragraph and buttons below the image */
     }
+
+
+    @keyframes home-details {
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(-100vw);
+            opacity: 1;
+        }
+    }
+    
+
 }
