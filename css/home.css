@@ -1,10 +1,12 @@
 
 .hero {
+    display: flex;
     text-align: left; 
     justify-items: center;
     padding: 2rem;
     background: 0;
     color: white; 
+    width: 100%;
 }
 
 .hero-content {
@@ -19,6 +21,7 @@
 .hero-text {
     text-align: left;
     position: relative;
+    margin-top: 50px;
     left: -100vw;
     animation: welcome 2s forwards ease-in-out;
     opacity: 0;
@@ -39,6 +42,8 @@
     left: 100vw;
     animation: home-details 2s forwards ease-in-out;
     opacity: 0;
+}
+.hero-details > p,h2{
     z-index: -1;
 }
 
@@ -96,46 +101,6 @@
     display: inline-block;
 }
 
-@media screen and (max-width: 600px) {
-    .hero-image {
-        left: 0vw;
-        top: 0vh;
-    }
-    .hero-content {
-        grid-template-columns: 1fr;
-    }
-    .hero-image img {
-        width: 50vw;
-        height: 50vw;
-        
-    }
-    .hero-text > h1{
-        font-size: 1.5rem;
-        width: 90vw;
-    }
-    
-
-
-}
-
-@media screen and (max-width: 400px) {
-    .hero-image {
-        left: 0vw;
-        top: 0vh;
-    }
-    .hero-text > h1{
-        font-size: 1.5rem;
-        margin-bottom: 0;
-        padding-bottom: 0;
-    }
-    .hero-image img {
-        width: 70vw;
-        height: 70vw;
-        
-    }
-    
-
-}
 
 @media (max-width: 768px) {
     .hero-image {
@@ -178,5 +143,65 @@
         }
     }
     
+
+}
+
+@media screen and (max-width: 600px) {
+    .hero-image {
+        left: 0vw;
+        top: 0vh;
+    }
+    .hero-content {
+        grid-template-columns: 1fr;
+    }
+    .hero-image img {
+        width: 50vw;
+        height: 50vw;
+        
+    }
+    .hero-text > h1{
+        font-size: 1.5rem;
+        width: 90vw;
+    }
+    #home{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    @keyframes home-details {
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(-100vw);
+            opacity: 1;
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 400px) {
+    .hero-image {
+        left: 0vw;
+        top: 0vh;
+    }
+    .hero-text > h1{
+        font-size: 1.5rem;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .hero-image img {
+        width: 70vw;
+        height: 70vw;
+        
+    }
+    .hero-details{
+        display: flex;
+        flex-direction: column;
+    }
+
 
 }

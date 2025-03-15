@@ -6,7 +6,7 @@ body {
     padding: 0;
     background-color: black; /* Black background for the rest of the page */
     font-family: Arial, sans-serif;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    width: auto;
 }
 
 /* Style for #box1 as the background */
@@ -50,52 +50,57 @@ h2{
 /* -------------------------------------------- */
 
 /* General Styles */
-body {
+html, body {
+    overflow-x: hidden;
+    width: 100%;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    color: #333;
-    justify-content: center;
 }
 
 
 
 .btn {
+    width: auto;
     display: inline-block;
     margin: 10px;
     padding: 10px 20px;
     background: #333;
     color: #fff;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 30px;
+    box-shadow: 3px 3px 6px white;
 }
 
 .btn:hover {
-    background: #555;
+    background-color: white;
+    color: black;
+    box-shadow: 3px 3px 6px green;
 }
 
 section {
-    padding: 2rem;
     justify-items: center;
 }
 
 h2 {
     margin-bottom: 1rem;
 }
-
+.section-header{
+    text-align: center;
+}
 
 
 .site-end-footer{
+    
     background: rgba(243, 243, 243, 0.582); 
     color: black;
-    padding: 0.4rem 0;
     margin-top: 2rem;
 
     display: flex;
     flex-direction: column; /* Makes items align in a row */
     justify-content: center; /* Center the items */
     align-items: center; /* Align them vertically */
-    
+    position: absolute;
+    width: 100%;
 }
 .site-end-links{
     margin: 0;
@@ -115,7 +120,14 @@ h2 {
 
 
 
+header, .gallery-container {
+    max-width: 100vw;
+    overflow: hidden;
+}
 
+.menu-panel {
+    max-width: 100vw;
+}
 
 
 
@@ -137,7 +149,7 @@ h2 {
         height: 120vh;
         top: 769px;
         left: 453px;
-        rotate: 27deg;
+        rotate: 23deg;
     }
 }
 

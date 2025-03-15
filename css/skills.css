@@ -3,6 +3,9 @@
     flex-wrap: wrap;
     justify-content: space-around;
 }
+#skills{
+    width: 100%;
+}
 
 
 .skill {
@@ -16,6 +19,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
+}
+
+.skill > h2{
+    text-align: center;
+}
+
+.skills-description{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skills-text{
+    width: 90%;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #00000078;
+    border-radius: 20px;
+    box-shadow: 3px 3px 6px white;
+    text-align: center;
     
 }
 
